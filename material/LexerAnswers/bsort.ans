@@ -1,0 +1,379 @@
+MAIN
+(
+)
+{
+INT
+Name i
+,
+Name n
+,
+Name m
+=
+Integer 1
+,
+Name s
+,
+Name tmp
+,
+Name is_sorted
+=
+Integer 1
+,
+Name SIZE
+=
+Integer 20
+,
+Name data
+[
+Integer 20
+]
+,
+Name product
+;
+INT
+Name message
+[
+]
+=
+{
+Character 's'
+,
+Character 'o'
+,
+Character 'r'
+,
+Character 't'
+}
+;
+OUTPUTCHAR
+(
+Character '?'
+)
+;
+Name product
+=
+*
+(
+Integer 1
+,
+INPUTINT
+,
+Name m
+)
+;
+Name s
+=
+(
+Name product
+*
+Integer 1297
++
+Integer 1
+)
+%
+Integer 131
+*
+Integer 2
+-
+Integer 1
+;
+FOR
+(
+Name i
+*=
+Integer 0
+;
+Name i
+<
+Name SIZE
+;
+++
+Name i
+)
+{
+Name m
+=
+(
+Name m
+*
+Integer 23
++
+Integer 47
+)
+%
+Name s
+;
+Name data
+[
+Name i
+]
+=
++
+(
+Name m
+,
+Name i
+)
+%
+Name SIZE
+;
+++
+Name data
+[
+Name i
+]
+;
+}
+Name n
+=
+Name m
+=
+Name m
+*
+Integer 0
+;
+WHILE
+(
+Name n
+<
+Name SIZE
+-
+Integer 1
+||
+Name n
+==
+(
+Name SIZE
+-
+Integer 1
+)
+)
+{
+OUTPUTINT
+(
+Name data
+[
+Name n
+]
+)
+;
+++
+Name n
+;
+}
+OUTPUTCHAR
+(
+Character ' '
+)
+;
+Name i
+=
+Integer 0
+;
+WHILE
+(
+Integer 1
+)
+{
+IF
+(
+Name data
+[
+Name i
+]
+>
+Name data
+[
+Name i
++
+Integer 1
+]
+)
+{
+Name is_sorted
+=
+Integer 0
+;
+BREAK
+;
+}
+++
+Name i
+;
+IF
+(
+!
+(
+Name i
+-
+Name SIZE
++
+Integer 1
+)
+)
+BREAK
+;
+}
+IF
+(
+Name is_sorted
+)
+{
+OUTPUTCHAR
+(
+Character 'o'
+)
+;
+OUTPUTCHAR
+(
+Character 'k'
+)
+;
+}
+IF
+(
+!
+Name is_sorted
+)
+{
+Name i
+=
+-
+Integer 1
+;
+WHILE
+(
+Name i
+<
+Integer 3
+)
+{
+OUTPUTCHAR
+(
+Name message
+[
+++
+Name i
+]
+)
+;
+}
+OUTPUTCHAR
+(
+Character ' '
+)
+;
+Name n
+=
+Integer 0
+;
+WHILE
+(
+!
+(
+Name SIZE
+<
+Name n
++
+Integer 1
+)
+)
+{
+Name m
+=
+Name SIZE
+-
+Integer 1
+;
+WHILE
+(
+Name n
+<
+Name m
+)
+{
+IF
+(
+Name data
+[
+Name m
+-
+Integer 1
+]
+>
+Name data
+[
+Name m
+]
+)
+{
+Name tmp
+=
+Name data
+[
+Name m
+]
+;
+Name data
+[
+Name m
+]
+=
+Name data
+[
+Name m
+-
+Integer 1
+]
+;
+Name data
+[
+Name m
+-
+Integer 1
+]
+=
+Name tmp
+;
+}
+Name m
+--
+;
+}
+Name n
++=
+Integer 1
+;
+}
+FOR
+(
+Name i
+=
+Integer 0
+;
+Name i
+<
+Name SIZE
+;
+Name i
+=
++
+(
+Name i
+,
+-
+Integer 1
+,
+Integer 2
+)
+)
+OUTPUTINT
+(
+Name data
+[
+Name i
+]
+)
+;
+}
+}

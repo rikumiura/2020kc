@@ -1,0 +1,66 @@
+MAIN
+(
+)
+{
+INT
+Name m
+,
+Name n
+,
+Name max
+;
+Name max
+=
+INPUTINT
+;
+Name m
+=
+Integer 2
+;
+WHILE
+(
+Name m
+<
+Name max
+)
+{
+Name n
+=
+Integer 2
+;
+WHILE
+(
+!
+(
+Name m
+%
+Name n
+==
+Integer 0
+)
+)
+Name n
+=
+Name n
++
+Integer 1
+;
+IF
+(
+Name m
+==
+Name n
+)
+OUTPUTINT
+(
+Name m
+)
+;
+Name m
+=
+Name m
++
+Integer 1
+;
+}
+}

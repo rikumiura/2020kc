@@ -1,0 +1,79 @@
+MAIN
+(
+)
+{
+INT
+Name number
+[
+]
+=
+{
+-
+Integer 1
+,
+Integer 0
+,
+Integer 1
+}
+;
+INT
+Name message
+[
+]
+=
+{
+Character 'a'
+,
+Character 'r'
+,
+Character 'r'
+,
+Character 'a'
+,
+Character 'y'
+}
+;
+INT
+Name i
+=
+Integer 0
+;
+WHILE
+(
+Name i
+<
+Integer 3
+)
+{
+OUTPUTINT
+(
+Name number
+[
+Name i
+++
+]
+)
+;
+}
+Name i
+=
+Integer 0
+;
+WHILE
+(
+Name i
+<
+Integer 5
+)
+{
+OUTPUTCHAR
+(
+Name message
+[
+Name i
+++
+]
+)
+;
+}
+}

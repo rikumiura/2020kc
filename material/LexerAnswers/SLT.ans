@@ -1,0 +1,20 @@
+Integer 12
+=
+Integer 10
++
+Integer 8
+Integer 13
+==
+Integer 5
+!
+Integer 12
+Integer 12
+!=
+Integer 0
+Integer 0
+Integer 13
+==
+Integer 5
+Integer 14
+!=
+Integer 10

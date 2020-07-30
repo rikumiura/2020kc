@@ -1,0 +1,42 @@
+MAIN
+(
+)
+{
+INT
+Name i
+=
+Integer 10
+;
+WHILE
+(
+Name i
+>
+Integer 0
+)
+{
+--
+Name i
+;
+IF
+(
+Name i
+==
+Integer 3
+)
+BREAK
+;
+WHILE
+(
+Name i
+==
+Integer 5
+)
+BREAK
+;
+OUTPUTINT
+(
+Name i
+)
+;
+}
+}

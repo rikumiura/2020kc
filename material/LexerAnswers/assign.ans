@@ -1,0 +1,77 @@
+MAIN
+(
+)
+{
+INT
+Name i
+,
+Name j
+,
+Name k
+,
+Name l
+,
+Name m
+=
+-
+Integer 1
+,
+Name product
+;
+INT
+Name c
+;
+OUTPUTINT
+(
+Name m
+)
+;
+Name i
+=
+INPUTINT
+;
+Name j
+=
+INPUTINT
+;
+Name c
+=
+INPUTCHAR
++
+Integer 1
+;
+Name k
+=
+Name i
++
+Name j
+;
+Name l
+=
+Name product
+=
+Name i
+*
+Name j
+;
+OUTPUTINT
+(
+Name k
+)
+;
+OUTPUTINT
+(
+Name l
+)
+;
+OUTPUTINT
+(
+Name product
+)
+;
+OUTPUTCHAR
+(
+Name c
+)
+;
+}

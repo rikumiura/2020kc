@@ -1,0 +1,55 @@
+MAIN
+(
+)
+{
+INT
+Name i
+,
+Name sum
+;
+Name sum
+=
+Integer 0
+;
+Name i
+=
+INPUTINT
+;
+IF
+(
+Name i
+>
+Integer 0
+&&
+Name i
+<
+Integer 10
+)
+{
+WHILE
+(
+Integer 0
+<
+Name i
+)
+{
+Name sum
+=
+Name sum
++
+Name i
+;
+Name i
+=
+Name i
+-
+Integer 1
+;
+}
+}
+OUTPUTINT
+(
+Name sum
+)
+;
+}

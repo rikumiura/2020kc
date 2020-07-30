@@ -1,0 +1,57 @@
+MAIN
+(
+)
+{
+INT
+Name i
+,
+Name j
+,
+Name n
+;
+FOR
+(
+Name i
+=
+Integer 1
+;
+Name i
+<
+Integer 11
+;
+Name i
+++
+)
+{
+Name n
+=
+Integer 0
+;
+FOR
+(
+Name j
+=
+Integer 1
+;
+Name j
+<
+Name i
++
+Integer 1
+;
+++
+Name j
+)
+{
+Name n
++=
+Name j
+;
+}
+OUTPUTINT
+(
+Name n
+)
+;
+}
+}

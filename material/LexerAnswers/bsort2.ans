@@ -1,0 +1,236 @@
+MAIN
+(
+)
+{
+INT
+Name n
+=
+Integer 0
+,
+Name m
+=
+Integer 1
+,
+Name s
+,
+Name tmp
+,
+Name SIZE
+=
+Integer 20
+,
+Name data
+[
+Integer 20
+]
+;
+OUTPUTCHAR
+(
+Character '?'
+)
+;
+Name s
+=
+(
+INPUTINT
+*
+Integer 1297
++
+Integer 1
+)
+%
+Integer 131
+*
+Integer 2
+-
+Integer 1
+;
+WHILE
+(
+Name n
+<
+Name SIZE
+)
+{
+Name m
+=
+(
+Name m
+*
+Integer 23
++
+Integer 47
+)
+%
+Name s
+;
+Name data
+[
+Name n
+]
+=
+(
+Name m
++
+Name n
+)
+%
+Name SIZE
++
+Integer 1
+;
+Name n
+=
+Name n
++
+Integer 1
+;
+}
+Name n
+=
+Integer 0
+;
+WHILE
+(
+Name n
+<
+Name SIZE
+)
+{
+OUTPUTINT
+(
+Name data
+[
+Name n
+]
+)
+;
+Name n
+=
+Name n
++
+Integer 1
+;
+}
+OUTPUTCHAR
+(
+Character ' '
+)
+;
+Name n
+=
+Integer 0
+;
+WHILE
+(
+Name n
+<
+Name SIZE
+)
+{
+Name m
+=
+Name SIZE
+-
+Integer 1
+;
+WHILE
+(
+Name n
+<
+Name m
+)
+{
+IF
+(
+Name data
+[
+Name m
+-
+Integer 1
+]
+>
+Name data
+[
+Name m
+]
+)
+{
+Name tmp
+=
+Name data
+[
+Name m
+]
+;
+Name data
+[
+Name m
+]
+=
+Name data
+[
+Name m
+-
+Integer 1
+]
+;
+Name data
+[
+Name m
+-
+Integer 1
+]
+=
+Name tmp
+;
+}
+Name m
+=
+Name m
+-
+Integer 1
+;
+}
+Name n
+=
+Name n
++
+Integer 1
+;
+}
+OUTPUTINT
+(
+Name data
+[
+Integer 0
+]
+)
+;
+Name n
+=
+Integer 1
+;
+WHILE
+(
+Name n
+<
+Name SIZE
+)
+{
+OUTPUTINT
+(
+Name data
+[
+Name n
+]
+)
+;
+Name n
+=
+Name n
++
+Integer 1
+;
+}
+}

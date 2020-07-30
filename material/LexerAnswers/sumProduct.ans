@@ -1,0 +1,62 @@
+MAIN
+(
+)
+{
+OUTPUTINT
+(
+*
+(
+Integer 2
+,
+Integer 3
+,
+Integer 5
+)
+)
+;
+OUTPUTINT
+(
++
+(
+Integer 10
+,
+-
+Integer 20
+,
+Integer 30
+,
+-
+Integer 40
+,
+Integer 50
+)
+)
+;
+OUTPUTINT
+(
++
+(
+*
+(
+Integer 1
+)
+,
+*
+(
+Integer 2
+,
+Integer 2
+)
+,
+*
+(
+Integer 3
+,
+Integer 3
+,
+Integer 3
+)
+)
+)
+;
+}

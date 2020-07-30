@@ -1,0 +1,110 @@
+MAIN
+(
+)
+{
+INT
+Name i
+=
+Integer 7
+,
+Name a
+[
+Integer 7
+]
+;
+WHILE
+(
+Name i
+)
+Name a
+[
+--
+Name i
+]
+=
+Integer 10
+*
+Name i
+;
+OUTPUTINT
+(
+Name a
+[
+Integer 0
+]
+)
+;
+WHILE
+(
+Name i
+<
+Integer 6
+)
+OUTPUTINT
+(
+Name a
+[
+++
+Name i
+]
+)
+;
+WHILE
+(
+Name i
+>
+Integer 4
+)
+--
+Name a
+[
+--
+Name i
+]
+;
+WHILE
+(
+Name i
+>
+Integer 1
+)
+++
+Name a
+[
+--
+Name i
+]
+;
+Name a
+[
+Name i
+*=
+Integer 0
+]
++=
+Integer 5
+;
+OUTPUTINT
+(
+Name a
+[
+Integer 0
+]
+)
+;
+WHILE
+(
+Name i
+<
+Integer 6
+)
+OUTPUTINT
+(
+Name a
+[
+++
+Name i
+]
+)
+;
+}
